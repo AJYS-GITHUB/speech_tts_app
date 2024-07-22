@@ -1,0 +1,15 @@
+.customButton {
+  padding: 5px 20px;
+  background-color: #1d3460;
+  color: white;
+  border-radius: 20px;
+}
+
+.customButton:hover {
+  background-color: #2c4d89;
+  cursor: pointer;
+}
+
+:host {
+  position: absolute;
+}

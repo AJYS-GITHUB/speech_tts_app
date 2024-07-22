@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UCV</title>
+  </head>
+  <body ngClass="btn-container" (click)="SelectText($event)">
+    <header>
+      <nav>
+        <div ngClass="img-container">
+          <img src="../../assets/ucv_logo.png" alt="" />
+          <div>
+            <p>Universidad</p>
+            <span>César Vallejo</span>
+          </div>
+        </div>
+        <ul>
+          <li>Programas académicos</li>
+          <li>Campus Universitario</li>
+          <li>Transparencia</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- <app-custom-button></app-custom-button> -->
+      <div>
+        <h2>Programas Académicos</h2>
+        <p>
+          Los programas académicos son estructuras educativas organizadas que
+          abarcan una serie de cursos y experiencias de aprendizaje diseñadas
+          para proporcionar a los estudiantes conocimientos y habilidades en un
+          campo específico de estudio. Estos programas pueden variar en duración
+          y nivel educativo, incluyendo certificados, diplomas, licenciaturas,
+          maestrías y doctorados. Cada programa académico suele estar compuesto
+          por un currículo establecido que incluye materias obligatorias y
+          optativas, trabajos prácticos, proyectos de investigación y, en
+          algunos casos, prácticas profesionales.
+        </p>
+      </div>
+      <section>
+        <h2>Campus Universitario</h2>
+        <p>
+          Un campus universitario es el conjunto de terrenos, edificios y otras
+          instalaciones que pertenecen a una universidad o institución de
+          educación superior. Este espacio no solo alberga las aulas donde se
+          imparten las clases, sino también una variedad de infraestructuras y
+          servicios diseñados para apoyar la vida académica, social y personal
+          de los estudiantes, el personal docente y el administrativo.
+        </p>
+        <p>
+          Dentro de un campus universitario, se pueden encontrar bibliotecas,
+          laboratorios, residencias estudiantiles, centros deportivos,
+          comedores, cafeterías y áreas de recreación. Además, muchos campus
+          cuentan con instalaciones para actividades extracurriculares, como
+          teatros, galerías de arte y centros de investigación. Estas
+          instalaciones están destinadas a proporcionar un ambiente de
+          aprendizaje integral que fomente tanto el desarrollo académico como
+          personal.
+        </p>
+      </section>
+      <section>
+        <h2>Transparencia</h2>
+        <p>
+          Una universidad innovadora es una institución de educación superior
+          que se distingue por su enfoque proactivo hacia el avance del
+          conocimiento, la adopción de nuevas tecnologías y métodos pedagógicos,
+          y la promoción de un entorno que estimula la creatividad y el
+          emprendimiento. Estas universidades están comprometidas con la
+          investigación de vanguardia, la colaboración interdisciplinaria y la
+          preparación de sus estudiantes para enfrentar los desafíos del mundo
+          moderno.
+        </p>
+      </section>
+    </main>
+    <footer>
+      <div ngClass="container-logo">
+        <img src="../../assets/ucv_logo.png" alt="" />
+      </div>
+      <p>&copy; UCV 2024. Todos los derechos reservados.</p>
+    </footer>
+  </body>
+</html>
+<app-custom-button *ngIf="showButton" [style.top.px]="buttonPosition.y" [style.left.px]="buttonPosition.x" [textSelected]="selectedText"></app-custom-button>
+
